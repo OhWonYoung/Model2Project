@@ -1,0 +1,85 @@
+/* login Container */
+
+#wrap{
+	width: 100%;
+	min-height: 100vh;
+	background:url("../../img/index_bg.jpg") no-repeat 50%/ cover;
+}
+.container{
+	width: 100%;
+}
+.container .inner-container{
+	width: 100%;
+}
+.container .inner-container .login{
+	width: 100%;
+}
+.container .inner-container .login .sections{
+	width: 100%;
+}
+.container .inner-container .login .sections .section.sec1{
+	width: 100%;
+	background: #ffffff40;
+	min-height: calc(100vh - 190px - 192px);
+	display: flex;
+	justify-content: center;
+
+}
+.container .inner-container .login .sections .section.sec1 .sec-con{
+	flex: 0 1 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+	.container .inner-container .login .sections .section.sec1 .sec-con .login-con{
+	flex: 0 1 450px;
+	border: 1px solid;
+	padding: 20px;
+	background: #000000b8;
+	}
+	.container .inner-container .login .sections .section.sec1 .sec-con .login-con .login-form{
+	padding:10px;
+	background: #ffffff40;
+	}
+	.container .inner-container .login .sections .section.sec1 .sec-con .login-con .login-form h1.title{
+	text-align: center;
+	line-height: 50px;
+	background: white;
+	padding: 10px;
+	margin-bottom: 10px;
+	}
+	.container .inner-container .login .sections .section.sec1 .sec-con .login-con .login-form ul{}
+	.container .inner-container .login .sections .section.sec1 .sec-con .login-con .login-form ul>li{
+margin-bottom: 10px;
+	
+}
+	.container .inner-container .login .sections .section.sec1 .sec-con .login-con .login-form ul>li>input{
+	line-height: 40px;
+	width: 100%;
+	}
+	.container .inner-container .login .sections .section.sec1 .sec-con .login-con .login-form ul>li:first-child{
+	display: flex;
+	justify-content: space-between;
+}
+
+	.container .inner-container .login .sections .section.sec1 .sec-con .login-con .login-form ul>li:last-child{
+	display: flex;
+	justify-content: space-around;
+}
+.container .inner-container .login .sections .section.sec1 .sec-con .login-con .login-form ul>li:last-child>input{
+	width: 40%;
+	background: red;
+	border: 0;
+	outline: 0;
+	color: white;
+}
+.container .inner-container .login .sections .section.sec1 .sec-con .login-con .login-form ul>li:last-child>input:last-child {
+	background: green;
+}
+#pwId{
+	color: red;
+}
+.pwId2{
+	color: blue !important; /* !important -> 중요한 속성 - 변경되지 않게 해준다. */
+/* 클래스를 직접 넣지 않고 따로 만들어두어서 JavaScript에서 불러오면 적용되게 해준다. */
+}

@@ -1,0 +1,19 @@
+/* footer */
+
+.footer{
+	width: 100%;
+	
+	padding: 20px;
+	
+}
+.footer .inner-footer{
+	display: flex;
+	justify-content: center;
+}
+.footer .inner-footer .fcon{
+	flex: 0 1 1000px;
+	line-height: 150px;
+	text-align: center;
+	background: #000000b8;
+	color: white;
+	}

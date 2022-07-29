@@ -1,0 +1,106 @@
+/* boardWrite Container */
+
+#wrap{
+	width: 100%;
+	min-height: 100vh;
+	background:url("../../img/index_bg.jpg") no-repeat 50%/ cover;
+}
+.container{
+	width: 100%;
+}
+.container .inner-container{
+	width: 100%;
+}
+.container .inner-container .boardWrite{
+	width: 100%;
+}
+.container .inner-container .boardWrite .sections{
+	width: 100%;
+}
+.container .inner-container .boardWrite .sections .section.sec1{
+	width: 100%;
+	background: #ffffff40;
+	min-height: calc(100vh - 190px - 192px);
+	display: flex;
+	justify-content: center;
+
+}
+.container .inner-container .boardWrite .sections .section.sec1 .sec-con{
+	flex: 0 1 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con{
+	flex: 0 1 450px;
+	border: 1px solid;
+	padding: 20px;
+	background: #000000b8;
+	}
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form{
+	padding:10px;
+	background: #ffffff40;
+	}
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form h1.title2{
+	text-align: center;
+	line-height: 50px;
+	background: white;
+	padding: 10px;
+	margin-bottom: 10px;
+	}
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul{}
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li{
+margin-bottom: 10px;
+background: white;
+		text-align: center;
+}
+.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li>label{
+	line-height: 40px;
+	display: block;
+	float: left;
+	width: 30%
+	}
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li>span{
+	line-height: 40px;
+ display: block;
+	float: left;
+ width: 70%
+	}
+		.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li>input{
+		text-align:center;
+			width: 70%;
+			line-height: 40px;
+			border: 0;
+			outline: 0;
+			cursor: pointer;
+	}
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li:nth-last-of-type(2) {
+	padding: 10px;}	
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li:nth-last-of-type(2)>label {
+		width: 100%;
+		background: red;
+	}	
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li:nth-last-of-type(2)>textarea {
+	width: 100%;
+	outline: 0;
+	border: 0;
+	}
+	.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li:last-child {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.container .inner-container .boardWrite .sections .section.sec1 .sec-con .boardWrite-con .boardWrite-form ul>li:last-child .l1{
+	width: 100%;
+	line-height: 40px;
+	font-size: 1em;
+	background: #a8c9e5;
+	border: 1px solid;
+	margin: 5px;
+	}
+	

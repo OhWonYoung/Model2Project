@@ -1,0 +1,43 @@
+/* index Container */
+
+#wrap{
+	width: 100%;
+	min-height: 100vh;
+	background:url("../../img/index_bg.jpg") no-repeat 50%/ cover;
+}
+.container{
+	width: 100%;
+}
+.container .inner-container{
+	width: 100%;
+}
+.container .inner-container .index{
+	width: 100%;
+}
+.container .inner-container .index .sections{
+	width: 100%;
+}
+.container .inner-container .index .sections .section.sec1{
+	width: 100%;
+	background: #ffffff40;
+	min-height: calc(100vh - 190px - 192px);
+	display: flex;
+	justify-content: center;
+
+}
+.container .inner-container .index .sections .section.sec1 .sec-con{
+	flex: 0 1 1000px;
+
+	}
+	.container .inner-container .index .sections .section.sec1 .sec-con h1.title{
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 3em;
+	}
+	.container .inner-container .index .sections .section.sec1 .sec-con .video video{
+		width: 100%;
+	}
