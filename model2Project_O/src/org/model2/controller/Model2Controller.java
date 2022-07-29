@@ -42,6 +42,8 @@ public class Model2Controller extends HttpServlet{
 			url = "/join.jsp";
 		}else if(basicURL.equals("loginView")) {
 			url = "/login.jsp";
+		}else if(basicURL.equals("updateView")) {
+			url = "/memberUpdate.jsp";
 		}else if(basicURL.equals("joinOk")) {
 			commend = new JoinOkCommend();
 			commend.ExcuteQueryCommend(request, response);

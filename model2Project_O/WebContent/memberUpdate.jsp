@@ -3,15 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="js/boardWrite.js" defer></script>
-<link rel="stylesheet" href="css/boardWrite.css" />
+<script src="js/memberUpdateOk.js" defer></script>
+<link rel="stylesheet" href="css/memberUpdate.css" />
 <meta charset="UTF-8">
-<title>boardWrite</title>
+<title>memberUpdate</title>
 </head>
 <body>
 	<div id="wrap">
 		<%@include file="common/header.jsp"%>
-		<%@include file="container/boardWriteContainer.jsp"%>
+		<%@include file="container/memberUpdateContainer.jsp"%>
 		<%@include file="common/footer.jsp"%>
 	</div>
 </body>

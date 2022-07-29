@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.model2.commend.BoardDeleteCommend;
 import org.model2.commend.BoardListViewCommend;
+import org.model2.commend.BoardMaxNoCommend;
 import org.model2.commend.BoardViewCommend;
 import org.model2.commend.BoardWriteCommend;
 import org.model2.commend.ExcuteCommend;
@@ -46,7 +47,7 @@ public class BoardController extends HttpServlet{
 			commend.ExcuteQueryCommend(request, response);
 			url = (String)request.getAttribute("url");
 		}else if(basicURL.equals("boardWriteView")) {
-//			commend = new B
+			commend = new BoardMaxNoCommend();
 			commend.ExcuteQueryCommend(request, response);
 			url = (String)request.getAttribute("url");
 		}else if(basicURL.equals("boardView")) {

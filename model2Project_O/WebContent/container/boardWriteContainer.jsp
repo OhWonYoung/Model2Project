@@ -2,62 +2,51 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-Board1 boardView =(Board1)request.getAttribute("boardView");
-String sessionId2 = (String) session.getAttribute("sessionId");
-String admin2 = (String) session.getAttribute("admin");
+int maxNo = (int)request.getAttribute("maxNo");
 %>
 <div class="container">
 	<div class="inner-container">
-		<div class="boardView">
+		<div class="boardWrite">
 			<div class="sections">
 				<div class="section sec1">
 					<div class="sec-con">
-						<div class="boardView-con">
-						<div class="boardView-form">
-						<h1 class="title2">글 상세보기</h1>
-						<form action="boardUpdateOk.do"method="POST" id="boardUpdateOkForm">
+						<div class="boardWrite-con">
+						<div class="boardWrite-form">
+						<h1 class="title2">글 작성</h1>
+						<form action="boardwriteOk.do"method="POST" id="boardwriteOkForm">
 							<ul>
 								<li>
 									<label for="no">글번호</label>
-									<input type="hidden" name="no" id="no" value="<%=boardView.getNo() %>"/>
-									<span><%=boardView.getNo() %></span>
+									<input type="hidden" name="no" id="no" value="<%=maxNo %>" />
+									<span><%=maxNo %></span>
 								</li>
 								<li>
 									<label for="userId">작성자</label>
-									<input type="hidden" name="userId" id="userId" value="<%=boardView.getUserId() %>"/>
-									<span><%=boardView.getUserId() %></span>
+									<input type="hidden" name="userId" id="userId" value="<%=session.getAttribute("sessionId") %>" />
+									<span><%=session.getAttribute("sessionId") %></span>
 								</li>
 								<li>
 									<label for="userPw">글 비밀번호</label>
-									<input type="hidden" name="userPw" id="userPw" value="<%=boardView.getUserPw() %>"/>
-									<span><%=boardView.getUserPw() %></span>
+									<input type="text" name="userPw" id="userPw" />
 								</li>
 								<li>
 									<label for="title">글제목</label>
-									<input type="text" name="title" value="<%=boardView.getTitle() %>" />
+									<input type="text" name="title" id="title"/>
 								</li>
 								<li>
-									<label for="content">글내용</label>
+									<label for="content" id="content">글내용</label>
 									<textarea rows="20" cols="30">
-										<%=boardView.getContent() %>
 									</textarea>
 								</li>
 								<li>
-									<%-- <%if(session.getAttribute("sessionId")==null){%> 이렇게 바로 넣어도 됨 --%>
-									<%if(sessionId2==null){%>
+									<%if(session.getAttribute("sessionId")==null){%>
 									<a href="index.do" class="l1">HOME</a>
-									<a href="boardListView.bo" class="l1">글 목록</a>
 									<a href="loginView.do" class="l1">로그인</a>
-									<%}else{ %>
+									<% }else{ %>
 									<a href="index.do" class="l1">HOME</a>
 									<a href="boardListView.bo" class="l1">글 목록</a>
-										<%if(admin2!=null){%>
-									<input type="button" value="글수정" id="boardUpdateOkBtn" class="l1"/>
-									<a href="boardDelete.bo?no=<%=boardView.getNo() %>" class="l1">글 삭제</a>
-										<%}else{%>
-									<input type="button" value="글수정" id="boardUpdateOkBtn" class="l1"/>
-									<%} %>
-									<%} %>
+									<input type="button" value="글등록" id="boardwriteOkBtn" class="l1"/>
+									<% } %>
 								</li>
 							</ul>						
 						</form>

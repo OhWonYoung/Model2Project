@@ -60,7 +60,7 @@
 									</tbody>
 									<tfoot>
 										<tr>
-											<td colspan="6"><a href="#">글쓰기</a></td>
+											<td colspan="6"><a href="boardWriteView.bo?userId=<%=session.getAttribute("sessionId")%>">글쓰기</a></td>
 										</tr>
 									</tfoot>
 								</table>

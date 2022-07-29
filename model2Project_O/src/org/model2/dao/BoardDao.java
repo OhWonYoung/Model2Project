@@ -164,7 +164,7 @@ public class BoardDao {
 		
 		try {
 			conn = DBConnect.getConnection();
-			query = "select sequnece_board1_no.CURRVAL+1 from board1";
+			query = "select max(no)+1 from board1";
 			pstm = conn.prepareStatement(query);
 			
 			rs = pstm.executeQuery();

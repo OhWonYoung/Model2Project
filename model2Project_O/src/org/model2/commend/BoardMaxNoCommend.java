@@ -19,10 +19,10 @@ public class BoardMaxNoCommend implements ExcuteCommend{
 		int maxNo = dao.maxNo();
 		
 		if(maxNo>0) {
-			url = "boardWrite.bo";
+			url = "/boardWrite.jsp";
 			request.setAttribute("maxNo", maxNo);
 		}else {
-			url = "boardListView.bo";
+			url = "index.do";
 		}
 		request.setAttribute("url", url);
 	}
